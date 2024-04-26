@@ -1,0 +1,129 @@
+@import url("https://fonts.googleapis.com/css2?family=Manrope:wght@200..800&family=Space+Grotesk:wght@300..700&display=swap");
+
+* {
+  padding: 0;
+  margin: 0;
+  text-decoration: none;
+  list-style: none;
+}
+body {
+  font-family: "Space Grotesk", sans-serif;
+  background-color: #f7f7f7;
+  overflow-x: hidden;
+  overflow-y: hidden;
+}
+nav {
+  height: 80px;
+  width: 100%;
+  border: 0.1px solid #bcbcbc;
+}
+label.logo {
+  font-size: 35px;
+  font-weight: bold;
+  padding: 0 100px;
+  line-height: 80px;
+  color: #343733;
+}
+nav ul {
+  float: right;
+  margin-right: 150px;
+}
+nav li {
+  display: inline-block;
+  margin: 0 8px;
+  line-height: 80px;
+}
+nav a {
+  color: #343733;
+  font-size: 18px;
+  text-transform: uppercase;
+  background-color: #343733 transparent;
+  padding: 7px 10px;
+  border-radius: 3px;
+  transition: background-color 0.5s ease-in-out, color 0.5s ease-in-out;
+}
+a.active,
+a:hover {
+  background-color: #343733;
+  color: white;
+  transition: 0.5s ease-in-out;
+}
+.links:hover :not(:hover) {
+  background-color: transparent;
+  color: #343733;
+}
+nav a:active {
+  background-color: transparent;
+  color: #343733;
+}
+
+@media screen and (max-width: 729px) {
+  nav ul {
+    margin-right: 90px;
+  }
+  label.logo {
+    font-size: 30px;
+    margin-left: -30px;
+  }
+  nav a {
+    font-size: 17px;
+  }
+}
+
+.section {
+}
+.section-container {
+  min-height: 100vh;
+  max-width: auto;
+  margin: auto;
+  padding: 1rem;
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 3rem;
+}
+.content {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+.subtitle {
+  letter-spacing: 2px;
+  font-weight: 600;
+  margin-bottom: 0.5rem;
+}
+.title {
+  font-size: 2.5rem;
+  font-weight: 400;
+  line-height: 3rem;
+  margin-bottom: 1rem;
+}
+.title span {
+  font-weight: 600;
+}
+.description {
+  line-height: 1.5rem;
+  margin-bottom: 2rem;
+}
+
+.image {
+  display: grid;
+  place-items: center;
+}
+.image img {
+  width: min(25rem, 90%);
+  border-radius: 100%;
+}
+.section__container {
+  padding: 10rem 1rem 5rem 1rem;
+  text-align: center;
+  grid-template-columns: repeat(1, 1fr);
+}
+.image {
+  grid-area: 1;
+  margin-bottom: 150px;
+  margin-left: 30px;
+}
+.content {
+  margin-bottom: 140px;
+  margin-right: 70px;
+}

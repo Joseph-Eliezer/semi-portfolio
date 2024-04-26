@@ -1,0 +1,87 @@
+* {
+  padding: 0;
+  margin: 0;
+  text-decoration: none;
+  list-style: none;
+}
+body {
+  font-family: "Space Grotesk", sans-serif;
+  background-color: #f7f7f7;
+  overflow-x: hidden;
+}
+nav {
+  height: 80px;
+  width: 100%;
+  border: 0.1px solid #bcbcbc;
+}
+
+/* this part is  for navbar */
+label.logo {
+  font-size: 35px;
+  font-weight: bold;
+  padding: 0 100px;
+  line-height: 80px;
+  color: #343733;
+}
+nav ul {
+  float: right;
+  margin-right: 150px;
+}
+nav li {
+  display: inline-block;
+  margin: 0 8px;
+  line-height: 80px;
+}
+nav a {
+  color: #343733;
+  font-size: 18px;
+  text-transform: uppercase;
+  background-color: #343733 transparent;
+  padding: 7px 10px;
+  border-radius: 3px;
+  transition: background-color 0.5s ease-in-out, color 0.5s ease-in-out;
+}
+a.active,
+a:hover {
+  background-color: #343733;
+  color: white;
+  transition: 0.5s ease-in-out;
+}
+.links:hover :not(:hover) {
+  background-color: transparent;
+  color: #343733;
+}
+nav a:active {
+  background-color: transparent;
+  color: #343733;
+}
+
+/* This part is for the love ones*/
+
+.my-fam {
+  margin-top: 50px;
+  text-align: center;
+}
+.fam-container ul li img {
+  height: 200px;
+  width: 300px;
+  object-fit: cover;
+  border-radius: 20px;
+  margin-top: 50px;
+}
+.fam-container ul li {
+  display: inline-block;
+  vertical-align: top;
+  padding: 0 30px;
+  border: 1px solid #bcbcbc;
+  height: 300px;
+  border-radius: 20px;
+}
+.fam-container ul {
+  text-align: center;
+  padding: 50px;
+}
+.fam-dsc {
+  text-align: center;
+  margin-bottom: 50px;
+}

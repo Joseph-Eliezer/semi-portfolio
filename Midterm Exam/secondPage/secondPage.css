@@ -1,0 +1,178 @@
+@import url("https://fonts.googleapis.com/css2?family=Manrope:wght@200..800&family=Space+Grotesk:wght@300..700&display=swap");
+
+* {
+  padding: 0;
+  margin: 0;
+  text-decoration: none;
+  list-style: none;
+}
+body {
+  font-family: "Space Grotesk", sans-serif;
+  background-color: #f7f7f7;
+  overflow-x: hidden;
+}
+nav {
+  height: 80px;
+  width: 100%;
+  border: 0.1px solid #bcbcbc;
+}
+
+/* this part is  for navbar */
+label.logo {
+  font-size: 35px;
+  font-weight: bold;
+  padding: 0 100px;
+  line-height: 80px;
+  color: #343733;
+}
+nav ul {
+  float: right;
+  margin-right: 150px;
+}
+nav li {
+  display: inline-block;
+  margin: 0 8px;
+  line-height: 80px;
+}
+nav a {
+  color: #343733;
+  font-size: 18px;
+  text-transform: uppercase;
+  background-color: #343733 transparent;
+  padding: 7px 10px;
+  border-radius: 3px;
+  transition: background-color 0.5s ease-in-out, color 0.5s ease-in-out;
+}
+a.active,
+a:hover {
+  background-color: #343733;
+  color: white;
+  transition: 0.5s ease-in-out;
+}
+.links:hover :not(:hover) {
+  background-color: transparent;
+  color: #343733;
+}
+nav a:active {
+  background-color: transparent;
+  color: #343733;
+}
+
+/* moving to this part is my hobbies */
+.my-hbs {
+  text-align: center;
+  padding: 30px;
+  margin-top: 60px;
+}
+.hobbies-list ul li img {
+  height: 100px;
+  width: 200px;
+  object-fit: cover;
+  margin: 20px 30px;
+  border-radius: 20px;
+}
+.hobbies-list ul {
+  text-align: center;
+}
+.hobbies-list ul li {
+  display: inline-block;
+  vertical-align: top;
+  margin: 0 10px;
+}
+.hobbies-list ul li h4 {
+  margin-top: 10px;
+}
+.hobbies-list ul li {
+  height: 360px;
+  width: 400px;
+  border: 0.1px solid #bcbcbc;
+  border-radius: 20px;
+}
+.hobbies-list p {
+  text-align: center;
+  font-size: 20px;
+}
+
+/* For Advertisement part*/
+.advertisement-container ul li img {
+  height: 200px;
+}
+.advertisement-container ul li {
+  display: inline-block;
+  padding: 50px;
+  border: 0.1px solid #bcbcbc;
+  vertical-align: top;
+  margin: 0 10px;
+  border-radius: 20px;
+}
+.advertisement-container ul {
+  text-align: center;
+}
+.advertisement-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.looking-for {
+  padding-top: 100px;
+  text-align: center;
+  margin: 50px;
+}
+.adv-description {
+  text-align: center;
+  margin: 50px;
+}
+
+/*This part is now for skills*/
+.my-skill {
+  text-align: center;
+  padding-top: 100px;
+  margin: 50px;
+}
+.skills-container ul li img {
+  height: 150px;
+}
+.skills-container ul li {
+  display: inline-block;
+  padding: 0 50px;
+  border: 0.1px solid #bcbcbc;
+  height: 250px;
+  width: 500px;
+  vertical-align: top;
+  border-radius: 20px;
+}
+.skills-container ul {
+  text-align: center;
+  padding: 50px;
+}
+
+/*This part is for my Dream*/
+.my-dream {
+  text-align: center;
+  padding: 50px;
+}
+.dream-container ul li img {
+  height: 250px;
+  width: 300px;
+  object-fit: cover;
+  border-radius: 20px;
+  margin-top: 25px;
+}
+.dream-container ul li {
+  display: inline-block;
+  border: 1px solid #bcbcbc;
+  padding: 0 50px;
+  height: 300px;
+  width: 300px;
+  vertical-align: top;
+  margin-bottom: 100px;
+  border-radius: 20px;
+}
+.dream-container ul {
+  text-align: center;
+}
+.dream-dsc {
+  text-align: center;
+  margin-bottom: 100px;
+  margin-top: -20px;
+}
